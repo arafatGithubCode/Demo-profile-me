@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./utils/themes";
 import Navbar from "./components/navbar/Index";
+import HeroSection from "./components/heroSection/Index";
 
 import styled from "styled-components";
 
@@ -20,7 +21,9 @@ export default function App() {
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <BrowserRouter>
         <Navbar />
-        <Body></Body>
+        <Body>
+          <HeroSection />
+        </Body>
       </BrowserRouter>
     </ThemeProvider>
   );
