@@ -12,6 +12,7 @@ import Experience from "./components/experience/Experience";
 import Project from "./components/project/Project";
 import Education from "./components/education/Education";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -53,6 +54,7 @@ export default function App() {
             <Education />
             <Contact />
           </Wrapper>
+          <Footer />
         </Body>
       </BrowserRouter>
     </ThemeProvider>
