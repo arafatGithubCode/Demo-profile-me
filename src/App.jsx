@@ -11,6 +11,7 @@ import Skills from "./components/skills/Skill";
 import Experience from "./components/experience/Experience";
 import Project from "./components/project/Project";
 import Education from "./components/education/Education";
+import Contact from "./components/contact/Contact";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -50,6 +51,7 @@ export default function App() {
           <Project openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
             <Education />
+            <Contact />
           </Wrapper>
         </Body>
       </BrowserRouter>
