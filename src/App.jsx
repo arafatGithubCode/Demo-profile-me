@@ -10,6 +10,7 @@ import styled from "styled-components";
 import Skills from "./components/skills/Skill";
 import Experience from "./components/experience/Experience";
 import Project from "./components/project/Project";
+import Education from "./components/education/Education";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -46,8 +47,9 @@ export default function App() {
             <Skills />
             <Experience />
           </Wrapper>
+          <Project openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
-            <Project openModal={openModal} setOpenModal={setOpenModal} />
+            <Education />
           </Wrapper>
         </Body>
       </BrowserRouter>
