@@ -9,6 +9,7 @@ import HeroSection from "./components/heroSection/Index";
 import styled from "styled-components";
 import Skills from "./components/skills/Skill";
 import Experience from "./components/experience/Experience";
+import Project from "./components/project/Project";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -33,6 +34,7 @@ const Wrapper = styled.div`
 
 export default function App() {
   const [darkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
@@ -43,6 +45,9 @@ export default function App() {
           <Wrapper>
             <Skills />
             <Experience />
+          </Wrapper>
+          <Wrapper>
+            <Project openModal={openModal} setOpenModal={setOpenModal} />
           </Wrapper>
         </Body>
       </BrowserRouter>
