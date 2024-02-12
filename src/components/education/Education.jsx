@@ -65,7 +65,7 @@ const TimeLineSection = styled.div``;
 
 const Education = () => {
   return (
-    <Container>
+    <Container id="education">
       <Wrapper>
         <Title>Education</Title>
         <Description>

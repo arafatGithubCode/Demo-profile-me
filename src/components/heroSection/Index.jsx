@@ -20,7 +20,7 @@ import HeroImg from "../../images/arafat.png";
 
 const Index = () => {
   return (
-    <div>
+    <div id="about">
       <HeroContainer>
         <HeroBg>
           <HeroBgAnimation />

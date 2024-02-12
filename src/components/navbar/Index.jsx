@@ -47,7 +47,7 @@ const Index = () => {
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#project">Project</NavLink>
+          <NavLink href="#projects">Project</NavLink>
           <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>

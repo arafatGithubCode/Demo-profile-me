@@ -75,7 +75,7 @@ const TimeLineSection = styled.div`
 
 const Experience = () => {
   return (
-    <Container>
+    <Container id="experience">
       <Wrapper>
         <Title>Experience</Title>
         <Desc>

@@ -17,7 +17,7 @@ const Project = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState("all");
 
   return (
-    <Container>
+    <Container id="projects">
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
